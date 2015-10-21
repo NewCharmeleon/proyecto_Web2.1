@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//faltan rutas
+Route::get('')

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5d701f87c7c3c1a5b5d072c812cd507d",
-    "content-hash": "1d5782651f0e0d81225b931488e66b5f",
+    "hash": "4b0c402af95ca3c7c40f91f22c9a1912",
+    "content-hash": "0393439e0943b917e603518f37bd8ee3",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -218,6 +218,52 @@
             "time": "2014-12-20 21:24:13"
         },
         {
+            "name": "illuminate/html",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Html\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2015-01-01 16:31:18"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -372,7 +418,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1f804b9b518902f1fb736f86a8847b589f824a0f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/659865f96443fb0e4c0e77b3fcfcdb3b89f455a8",
                 "reference": "1f804b9b518902f1fb736f86a8847b589f824a0f",
                 "shasum": ""
             },
@@ -1003,7 +1049,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/574295690ac114f125972321a2db919c73467c16",
+                "url": "https://api.github.com/repos/symfony/console/zipball/1b6e3a1b85c913225284e6b8185c3e3d79bfdc27",
                 "reference": "574295690ac114f125972321a2db919c73467c16",
                 "shasum": ""
             },
@@ -1318,7 +1364,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/104c8d7279cee825645b751388dd0ae01f665594",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/657a7378faec0618bb4045f64f2aaabae3f38e8c",
                 "reference": "104c8d7279cee825645b751388dd0ae01f665594",
                 "shasum": ""
             },
@@ -1449,7 +1495,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/35887fcbba358cf7d503d72e081dca7b8479e1f0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/096c50f92ac54b3bfee8b66ad0c6c48869ea2406",
                 "reference": "35887fcbba358cf7d503d72e081dca7b8479e1f0",
                 "shasum": ""
             },
@@ -1495,7 +1541,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/96d2a38dff9bd674cbe0b7cd441f8e70dcc8cc41",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/cf00f02e003272035e4524c6ffca1042368d3f3f",
                 "reference": "96d2a38dff9bd674cbe0b7cd441f8e70dcc8cc41",
                 "shasum": ""
             },
@@ -2839,7 +2885,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "illuminate/html": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
