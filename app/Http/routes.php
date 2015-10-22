@@ -12,7 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pagina');
 });
 //faltan rutas
-Route::get('')
+//Route::get('/hola/{nombre}/{apellido}', function($nombre, $apellido){
+//});
+Route::get('/personas', 'PersonaController@personas');
+Route::get('/personas/{apellido}', 'PersonasController@personas');
+Route::get('/personas/nuevo', 'PersonaController@nuevo');
+
+Route::get('/personas/{id}/borrar', 'PersonaController@borrar');
+    
+
