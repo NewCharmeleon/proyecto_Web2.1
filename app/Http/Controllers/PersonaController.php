@@ -19,12 +19,14 @@ class PersonaController extends Controller
     public function index()
     {
         //
-        $personas=Persona::all();
-        return view('personas.index', compact('personas'));
+       //$personas=Persona::all();
+       
+       // return view('personas.index', compact('personas'));
                 
     }
     public function personas ($apellido = null)
     {
+        //$personas=Persona::all();
         //metodo 1:
         //$resultado = DB::select ('SELECT * FROM operaciones WHERE banco',['ape'=> "%$apellido%"]);
         
@@ -50,11 +52,23 @@ class PersonaController extends Controller
         
         $apellido = $request ->input("apellido");
         $nombre   = $request ->input("nombre");
-        $dni      = $request ->input("documento");
+        $documento      = $request ->input("numero_documento");
+        /*$sexo      = $request ->input("sexo");
+        $nacionalidad      = $request ->input("nacionalidad");
+        $archivosExt      = $request ->input("archivos_externos");
+        $fechaExp      = $request ->input("fecha_expedicion");
+        $fechaVenc      = $request ->input("fecha_vencimiento");
+        $domicilio      = $request ->input("domicilio");
+        $ciudad      = $request ->input("ciudad");
+        $departamento      = $request ->input("departamento");
+        $provincia      = $request ->input("provincia");
+        $fechaNac      = $request ->input("fecha_nacimiento");
+        $ugarNac      = $request ->input("lugar_nacimiento");*/
+        
         
         $reglas = [
-            'apellido' => 'require|min:3|max:30',
-            'nombre' => 'require|min:3|max:30',
+            'apellido' => 'require|min:3|max:50',
+            'nombre' => 'require|min:3|max:50',
             'dni' => 'require|min:11|max:99999999'
             ];
             //validamos...
@@ -62,14 +76,19 @@ class PersonaController extends Controller
             $personas = new Persona;
             $personas ->apellido = $apellido;
             $personas ->nombre = $nombre;
-            $personas ->documento = $dni;
+            $personas ->documento = $documento;
+            
+            
+            
+            
+            
             $personas ->save();
             
-            return redirect('personas');
+            return redirect('nuevo');
               
     }      
     public function borrar($id){
-        //recupero el registro por id de la base y lo borro
+        //recupero el registro por id de la base primweo ,lo borro
         //redirijo
         $personas = Persona::findOrFail($id);
         
