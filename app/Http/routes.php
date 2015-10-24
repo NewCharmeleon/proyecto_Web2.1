@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('persona');
+    return view('personas');
 });
 //faltan rutas
 /*Route::get('/{nombre}', function($nombre){
@@ -26,8 +26,10 @@ Route::get('/', function () {
     
 });*/
 Route::get('/personas', 'PersonaController@personas');
+Route::get('/clientes', 'ClienteController@cliente');
 Route::get('/personas/{apellido}', 'PersonaController@personas');
 Route::get('/personas/nuevo', 'PersonaController@nuevo');
+Route::get('/clientes/nuevo', 'ClienteController@nuevo');
 
 Route::get('/personas/{id}/borrar', 'PersonaController@borrar');
 //Route::resources('/personas','PersonaController');

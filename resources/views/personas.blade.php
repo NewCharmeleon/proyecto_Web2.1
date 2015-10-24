@@ -7,7 +7,7 @@
 
 <ul>
     @foreach($personas as $item)
-    <li> {{$item-> apellido}}, {{$item-> nombre}}  {{$item->numero_documento}} 
+    <li> {{$item->id}} {{$item-> apellido}}, {{$item-> nombre}}  {{$item->numero_documento}} 
         <a href="{{url('/personas/'.$item->id.'/borrar')}}">Borrar</a> </li>
     @endforeach
     

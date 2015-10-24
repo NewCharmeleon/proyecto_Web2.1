@@ -8,6 +8,7 @@ use App\Persona;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class PersonaController extends Controller
 {
@@ -52,7 +53,7 @@ class PersonaController extends Controller
         
         $apellido = $request ->input("apellido");
         $nombre   = $request ->input("nombre");
-        $documento      = $request ->input("numero_documento");
+        $documento      = $request ->input("documento");
         /*$sexo      = $request ->input("sexo");
         $nacionalidad      = $request ->input("nacionalidad");
         $archivosExt      = $request ->input("archivos_externos");
@@ -69,7 +70,7 @@ class PersonaController extends Controller
         $reglas = [
             'apellido' => 'require|min:3|max:50',
             'nombre' => 'require|min:3|max:50',
-            'dni' => 'require|min:11|max:99999999'
+            'documento' => 'require|min:11|max:99999999'
             ];
             //validamos...
             $this->validate($request, $reglas);
@@ -84,7 +85,7 @@ class PersonaController extends Controller
             
             $personas ->save();
             
-            return redirect('nuevo');
+            return redirect('personas');
               
     }      
     public function borrar($id){

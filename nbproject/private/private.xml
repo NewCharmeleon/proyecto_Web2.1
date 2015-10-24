@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/t-hp/proyecto_web2/resources/views/persona.blade.php</file>
+            <file>file:/home/t-hp/proyecto_web2/resources/views/personas.blade.php</file>
             <file>file:/home/t-hp/proyecto_web2/app/Http/Controllers/PersonaController.php</file>
-            <file>file:/home/t-hp/proyecto_web2/config/database.php</file>
+            <file>file:/home/t-hp/proyecto_web2/app/Http/Controllers/Auth/CrudController.php</file>
+            <file>file:/home/t-hp/proyecto_web2/resources/views/vendor/nuevecito.blade.php</file>
             <file>file:/home/t-hp/proyecto_web2/resources/views/layout.blade.php</file>
             <file>file:/home/t-hp/proyecto_web2/app/Persona.php</file>
             <file>file:/home/t-hp/proyecto_web2/app/Http/routes.php</file>
