@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('personas');
+    return view('bienvenido');
 });
 //faltan rutas
 /*Route::get('/{nombre}', function($nombre){

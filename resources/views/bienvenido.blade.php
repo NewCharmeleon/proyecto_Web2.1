@@ -1,3 +1,7 @@
+@extends('layout')
+@section('title','Listado de Personas')
+
+@section ('contenido')
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,7 +42,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Bienvenidos al Museo Salesiano</div>
             </div>
         </div>
     </body>
